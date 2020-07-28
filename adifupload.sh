@@ -1,7 +1,7 @@
 #!/bin/bash
 # update the adi file location. Also set EQSLUSER and EQSLPASS to your
 # eqsl username and password
-ADIFILE="/home/pi/.local/share/WSJT-X/wsjtx_log.adi"
+ADIFILE="/home/YOURUSERNAME/.local/share/WSJT-X/wsjtx_log.adi"
 EQSLUSER="N0CALL"
 EQSLPASS="not-my-pass"
 
