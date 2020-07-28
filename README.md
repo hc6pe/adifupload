@@ -31,11 +31,11 @@ sudo apt -y install curl inotify-tools
 
 sudo yum -y install curl inotify-tools
 
-And add it to your crontab at reboot:
+And add it to your crontab at reboot. Don't forget to change "YOURUSERNAME" to your username homedir, otherwise it will not start:
+
+crontab -e
 
 @reboot /home/YOURUSERNAME/adifupload/adifupload.sh
-
-Don't forget to change "YOURUSERNAME" to your username, otherwise it will not start.
 
 As the script will start on reboot you have to reboot.
 If you want to try the script without rebooting, simply run:
