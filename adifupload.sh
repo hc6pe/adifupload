@@ -24,11 +24,10 @@ existc=$?
 TAIL=$(which tail)
 CURL=$(which curl)
 
-while read j
+while [ true ]
 do
-   echo "inside the loop"
+   inotifywait -q -e modify $ADIFILE
    $TAIL -2 $ADIFILE > /tmp/log.adi
    $CURL -u $EQSLUSER:$EQSLPASS -F Filename=@/tmp/log.adi -F EQSL_USER=$EQSLUSER -F EQSL_PSWD=$EQSLPASS http://www.eqsl.cc/qslcard/ImportADIF.cfm
-
-done <  <(inotifywait -q -e modify $ADIFILE)
+done
 
