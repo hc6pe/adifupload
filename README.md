@@ -17,6 +17,12 @@ EQSLUSER="N0CALL"
 
 EQSLPASS="not-my-pass"
 
+#your TrustedQSL Location located in tqsl by going to:
+
+#Station Location -> Edit Location -> Next -> Data in "Station Location Name"
+
+TQSLLOCATION="MyLocation"
+
 Then:
 
 cd adifupload
@@ -27,11 +33,11 @@ Install the required packages (curl and inotify-tools):
 
 #for debian and ubuntu:
 
-sudo apt -y install curl inotify-tools
+sudo apt -y install curl inotify-tools trustedqsl
 
 #for fedora and centos:
 
-sudo yum -y install curl inotify-tools
+sudo yum -y install curl inotify-tools trustedqsl
 
 And add it to your crontab at reboot. Don't forget to change "YOURUSERNAME" to your username homedir, otherwise it will not start:
 
