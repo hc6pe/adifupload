@@ -29,7 +29,7 @@ cd adifupload
 
 chmod +x adifupload.sh
 
-Install the required packages (curl and inotify-tools):
+Install the required packages (trustedqsl,curl and inotify-tools):
 
 #for debian and ubuntu:
 
