@@ -23,11 +23,14 @@ EQSLPASS="not-my-pass"
 
 TQSLLOCATION="MyLocation"
 `
+
 Then:
 
-`cd adifupload
+`
+cd adifupload
 
-chmod +x adifupload.sh`
+chmod +x adifupload.sh
+`
 
 Install the required packages (trustedqsl,curl and inotify-tools):
 
@@ -47,6 +50,7 @@ And add it to your crontab at reboot. Don't forget to change "YOURUSERNAME" to y
 
 `
 crontab -e
+
 @reboot /home/YOURUSERNAME/adifupload/adifupload.sh
 `
 
