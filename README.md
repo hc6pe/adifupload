@@ -50,13 +50,16 @@ And add it to your crontab at reboot. Don't forget to change "YOURUSERNAME" to y
 
 `
 crontab -e
-
+`
+`
 @reboot /home/YOURUSERNAME/adifupload/adifupload.sh
 `
 
 As the script will start on reboot you have to reboot.
 If you want to try the script without rebooting, simply run:
 
-`~/adifupload/adifupload.sh`
+`
+~/adifupload/adifupload.sh
+`
 
 It will remain running in foreground.
