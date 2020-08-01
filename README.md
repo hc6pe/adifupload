@@ -24,11 +24,11 @@ EQSLPASS="not-my-pass"
 TQSLLOCATION="MyLocation"
 `
 Then:
-`
-cd adifupload
 
-chmod +x adifupload.sh
-`
+`cd adifupload
+
+chmod +x adifupload.sh`
+
 Install the required packages (trustedqsl,curl and inotify-tools):
 
 **for debian and ubuntu:**
@@ -38,6 +38,7 @@ sudo apt -y install curl inotify-tools trustedqsl
 `
 
 **for fedora and centos:**
+
 `
 sudo yum -y install curl inotify-tools trustedqsl
 `
@@ -46,10 +47,11 @@ And add it to your crontab at reboot. Don't forget to change "YOURUSERNAME" to y
 
 `crontab -e
 
-@reboot /home/YOURUSERNAME/adifupload/adifupload.sh
-`
+@reboot /home/YOURUSERNAME/adifupload/adifupload.sh`
+
 As the script will start on reboot you have to reboot.
 If you want to try the script without rebooting, simply run:
+
 `~/adifupload/adifupload.sh`
 
 It will remain running in foreground.
