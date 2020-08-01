@@ -3,27 +3,25 @@ Script to upload adif files to eQSL from Linux and, in the future, to other syst
 
 Edit **adifupload/adifupload.sh** and change the following variables to suit your needs:
 
-`
-#Where is your .adi file located? 
+`#Where is your .adi file located? `
 
-#Specify the full path (change YOURUSERNAME to the homedir of your username)
+`#Specify the full path (change YOURUSERNAME to the homedir of your username)`
 
-ADIFILE="/home/YOURUSERNAME/.local/share/WSJT-X/wsjtx_log.adi"
+`ADIFILE="/home/YOURUSERNAME/.local/share/WSJT-X/wsjtx_log.adi"`
 
-#your eQSL username. Use CAPS altough I think lowercase will work as well
+`#your eQSL username. Use CAPS altough I think lowercase will work as well`
 
-EQSLUSER="N0CALL"
+`EQSLUSER="N0CALL"`
 
-#your EQSL password.
+`#your EQSL password.`
 
-EQSLPASS="not-my-pass"
+`EQSLPASS="not-my-pass"`
 
-#your TrustedQSL Location located in tqsl by going to:
+`#your TrustedQSL Location located in tqsl by going to:`
 
-#Station Location -> Edit Location -> Next -> Data in "Station Location Name"
+`#Station Location -> Edit Location -> Next -> Data in "Station Location Name"`
 
-TQSLLOCATION="MyLocation"
-`
+`TQSLLOCATION="MyLocation"`
 
 Then:
 
