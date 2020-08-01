@@ -32,13 +32,16 @@ chmod +x adifupload.sh
 Install the required packages (trustedqsl,curl and inotify-tools):
 
 **for debian and ubuntu:**
+
 `
 sudo apt -y install curl inotify-tools trustedqsl
 `
+
 **for fedora and centos:**
 `
 sudo yum -y install curl inotify-tools trustedqsl
 `
+
 And add it to your crontab at reboot. Don't forget to change "YOURUSERNAME" to your username homedir, otherwise it will not start:
 
 `crontab -e
