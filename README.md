@@ -28,7 +28,9 @@ Then:
 
 `
 cd adifupload
+`
 
+`
 chmod +x adifupload.sh
 `
 
@@ -51,6 +53,7 @@ And add it to your crontab at reboot. Don't forget to change "YOURUSERNAME" to y
 `
 crontab -e
 `
+
 `
 @reboot /home/YOURUSERNAME/adifupload/adifupload.sh
 `
