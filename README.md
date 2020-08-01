@@ -3,7 +3,8 @@ Script to upload adif files to eQSL from Linux and, in the future, to other syst
 
 Edit **adifupload/adifupload.sh** and change the following variables to suit your needs:
 
-`#Where is your .adi file located? 
+`
+#Where is your .adi file located? 
 
 #Specify the full path (change YOURUSERNAME to the homedir of your username)
 
